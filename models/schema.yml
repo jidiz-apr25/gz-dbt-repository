@@ -1,0 +1,19 @@
+
+version: 2
+
+sources:
+  - name: data_circle
+    schema: raw_data_circle
+    tables:
+      - name: raw_cc_stock
+        description: raw stock data 
+      
+      - name: raw_cc_sales
+        description: raw sales data
+
+models:
+  - name: stg_data_circle__raw_cc_stock
+    description: clean raw stock 
+
+  - name: stg_data_circle__raw_cc_sales
+    description: clean raw sales

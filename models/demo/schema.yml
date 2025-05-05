@@ -25,3 +25,8 @@ models:
       - name : date_lead
         tests : 
           - not_null
+
+  - name: cc_funnel
+    columns:
+      ### PK ###
+      - name: company

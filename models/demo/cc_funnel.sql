@@ -1,13 +1,3 @@
--- {{ config(
---     materialized='table',
---     partition_by={
---       "field": "date_lead",
---       "data_type": "date",
---       "granularity": "day"
---     }
--- )}}
-
-
 WITH clean_cc_funnel AS (SELECT * FROM {{ ref('stg_cc_funnel') }})
 
     ,clean_cc_funnel_priority AS (SELECT * FROM {{ ref('stg_cc_funnel_priority') }}) 

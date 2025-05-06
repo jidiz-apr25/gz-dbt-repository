@@ -8,4 +8,14 @@ sources:
           description: raw data for stock
 
         - name: raw_cc_sales
-        
+          descritpion: raw data for sales
+
+
+models: 
+    - name: raw_sales
+      schema: stg_raw_data_circle__raw_cc_sales
+      description: stg for raw data sales
+
+    - name: raw_stock
+      schema: stg_raw_data_circle__raw_cc_stock
+      description: stg for raw data sales

@@ -2,3 +2,10 @@
 version: 2
 
 sources:
+    - name: raw_data_circle
+      tables:
+        - name: raw_cc_stock
+          description: raw data for stock
+
+        - name: raw_cc_sales
+        

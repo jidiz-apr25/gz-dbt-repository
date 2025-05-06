@@ -2,14 +2,14 @@ with
 
 source as (
 
-    select * from {{ source('raw_data_circle', 'raw_cc_sales') }}
+    select * from {{ source('raw', 'sales') }}
 
 ),
 
 renamed as (
 
     select
-        date_date,
+        date_date as date ,
         product_id,
         quantity
 

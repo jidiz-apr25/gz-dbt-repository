@@ -2,20 +2,33 @@
 version: 2
 
 sources:
-    - name: raw_data_circle
+    - name: raw
+      schema: raw_data_circle
+      description: raw data schema 
       tables:
-        - name: raw_cc_stock
+        - name: stock
+          identifier: raw_cc_stock
           description: raw data for stock
 
-        - name: raw_cc_sales
-          descritpion: raw data for sales
+        - name: sales
+          identifier: raw_cc_sales
+          description: raw data for sales
 
 
-models: 
-    - name: raw_sales
-      schema: stg_raw_data_circle__raw_cc_sales
-      description: stg for raw data sales
+models:
+        
+    
+      - name: stg_raw__sales 
+        description: raw sales data 
 
-    - name: raw_stock
-      schema: stg_raw_data_circle__raw_cc_stock
-      description: stg for raw data sales
+      - name: stg_raw__stock
+        description: raw stock data
+
+      - name: int_stock_sales
+        description: data join raw tables sales and stock
+
+      - name: int_sale_by_prod
+        description: data sales grouped by prod
+
+
+

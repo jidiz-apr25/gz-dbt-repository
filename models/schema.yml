@@ -15,6 +15,7 @@ sources:
           description: raw data for sales
 
 
+
 models:
         
     
@@ -32,3 +33,23 @@ models:
 
 
 
+      - name: stg_raw_chlg__sales
+        description: raw sales data
+
+      - name: stg_raw_chlg__ship
+        description: raw ship data 
+      
+      - name: stg_raw_chlg__product
+        description: raw product data 
+
+      - name: int_sales_margin
+        description: data join raw tables sales and product
+
+      - name: int_orders_margin
+        description: data sales margin by order and date
+
+      - name: int_orders_operational
+        description: data orders operational 
+      
+      - name: finance_days
+        description: data for finance

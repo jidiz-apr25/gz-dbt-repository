@@ -34,48 +34,39 @@ clean-targets: # directories to be removed by `dbt clean`
 # using the `{{ config(...) }}` macro.
 
 models:
-
-  chalenge:
-    staging:
-      +materialized: view
-    intermidiate:
-      +materialized: view
-    mart:
-      +materialized: table
-      finance:
-        +schema: DTM_FINANCE
-      supply_chain:
-        +schema: DTM_SUPPLY_CHAIN
-
-  demo_class:
-    staging:
-      +materialized: view
-    intermidiate:
-      +materialized: view
-    mart:
-      +materialized: table
-      +schema: DTM_LOGISTICS
-
-  class:
-    staging:
-      +materialized: view
-    intermidiate:
-      +materialized: view
-    mart:
-      +materialized: view
-      +schema: DTM_PRODUCT
-
   my_new_project:
-    staging:
-      +materialized: view
-    intermediate:
-      +materialized: view
-    mart:
-      +materialized: table
-      supply_chain:
-        +schema: supply_chain_sch
-      finance:
-        +schema: finance_sch
+
+    chalenge:
+      staging:
+        +materialized: view
+      intermidiate:
+        +materialized: view
+      mart:
+        +materialized: table
+        finance:
+          +schema: DTM_FINANCE
+        supply_chain:
+          +schema: DTM_SUPPLY_CHAIN
+
+    demo_class:
+      staging:
+        +materialized: view
+      intermidiate:
+        +materialized: view
+      mart:
+        +materialized: table
+        +schema: DTM_LOGISTICS
+
+    class:
+      staging:
+        +materialized: view
+      intermidiate:
+        +materialized: view
+      mart:
+        +materialized: view
+        +schema: DTM_PRODUCT
+
+
 
     # Applies to all files under models/example/
     # example:

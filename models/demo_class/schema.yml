@@ -1,5 +1,6 @@
 version: 2
 
+
 sources:
     - name: raw_demo
       schema: raw_data_circle
@@ -28,3 +29,29 @@ sources:
         - name: parcel
           identifier: raw_cc_parcel
           description: parcel data 
+
+models: 
+
+  - name: stg_raw_demo__funnel
+    description: funnel data
+  
+  - name: stg_raw_demo__funnel_priority
+    description: funnel data
+  
+  - name: stg_raw_demo__parcel_product
+    description: parcel product data 
+
+  - name: stg_raw_demo__parcel
+    description: parcel data
+
+  - name: stg_raw_demo__sales
+    description: parcel product data 
+
+  - name: stg_raw_demo__stock
+    description: parcel data
+
+  - name: int_parcel_info
+    description: parcel info data 
+
+  - name: dtm_parcels
+    description: dtm parcels

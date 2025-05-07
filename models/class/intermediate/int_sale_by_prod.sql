@@ -1,6 +1,5 @@
 select 
 product_id,
-
 sum( quantity) as qty,
 sum(stock) as stock,
 avg(price) as avg_price

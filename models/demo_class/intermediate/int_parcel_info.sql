@@ -3,7 +3,7 @@ WITH nb_products_parcel AS (
     parcel_id
     ,COUNT(DISTINCT(model_name)) AS nb_models
     ,SUM(qty) AS qty
-  FROM `parcel_dbt_dev_staging.stg_raw_demo__parcel_product`
+  FROM {{ref("stg_raw_demo__parcel_product")}}
   GROUP BY parcel_id
 )
 
@@ -39,5 +39,5 @@ SELECT
   -- Metrics --
   ,qty
   , nb_models
-FROM `parcel_dbt_dev_staging.stg_raw_demo__parcel`
+FROM {{ref("stg_raw_demo__parcel")}}
 LEFT JOIN nb_products_parcel USING (parcel_id)

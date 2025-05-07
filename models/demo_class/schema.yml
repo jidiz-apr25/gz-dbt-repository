@@ -1,0 +1,30 @@
+version: 2
+
+sources:
+    - name: raw_demo
+      schema: raw_data_circle
+      description: raw data schema 
+      tables:
+        - name: stock
+          identifier: raw_cc_stock
+          description: raw data for stock
+
+        - name: sales
+          identifier: raw_cc_sales
+          description: raw data for sales
+
+        - name: funnel_priority
+          identifier: raw_cc_funnel_priority
+          description: data funnel priority 
+        
+        - name: funnel
+          identifier: raw_cc_funnel
+          description: data funnel priority 
+
+        - name: parcel_product
+          identifier: raw_cc_parcel_product
+          description: parcel product data
+
+        - name: parcel
+          identifier: raw_cc_parcel
+          description: parcel data 

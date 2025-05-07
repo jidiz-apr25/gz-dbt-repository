@@ -2,7 +2,7 @@
 
 SELECT
     orders_id,
-    date,
+    `date`,
     ROUND(SUM(revenue),2) as revenue,
     ROUND(SUM(quantity),2) as quantity,
     ROUND(SUM(purchase_cost),2) as purchase_cost,

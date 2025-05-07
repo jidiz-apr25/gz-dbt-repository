@@ -79,3 +79,9 @@ models:
       
       - name: finance_days
         description: data for finance
+
+      - name: test_query
+        description: data test 
+      
+      - name: supply_chain_data
+        description: data for supply chain

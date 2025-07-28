@@ -89,8 +89,6 @@ models:
       - name: int_orders_operational
         description: data orders operational 
       
-      - name: finance_days
-        description: data for finance
 
       - name: test_query
         description: data test 

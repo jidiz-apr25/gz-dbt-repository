@@ -3,6 +3,11 @@ version: 2
 
 
 models:
+
+
+  - name: finance_days
+    description: data for finance
+
   - name: finance_campaigns_day
     description: global kpi daily 
     columns:
